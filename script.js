@@ -6,7 +6,6 @@ function arr() {
 	})
 } 
 arr().then((val)=>{
-	output.innerText=val.join(" ")
 	return new Promise((res,rej)=>{
 		setTimeout(res,1000,val.filter((ele)=>ele%2==0))
 	})
